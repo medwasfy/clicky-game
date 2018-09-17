@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #000;
+    background: rgb(196, 192, 192);
     min-height: 65px;
     width: 100%;
     text-align: center;
@@ -11,8 +11,8 @@
     color: #fff;
     font-size: 2em;
     font-weight: bold;
-    z-index: 99;
-    white-space: nowrap;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .nav a {
@@ -21,7 +21,7 @@
 
 .nav a:hover {
     color: #fff;
-    background-color: #5133a4 !important;
+    background-color: #4d4c50 !important;
 }
 
 .desc-normal {

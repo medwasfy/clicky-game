@@ -26,13 +26,13 @@ class App extends Component {
         }
     }
 
-    selectCard = name => {
-        const findProfile = this.state.unselectedProfiles.find(item => item.name === name);
+    selectProfile = profile => {
+        const findProfile = this.state.unselectedProfiles.find(item => item.profile === profile);
 
         if(findProfile === undefined) {
             // wrong selection
             this.setState({ 
-                message: "You guessed incorrectly!",
+                message: "Wrong Guess!",
                 topScore: (this.state.curScore > this.state.topScore) ? this.state.curScore : this.state.topScore,
                 curScore: 0,
                 profiles: profiles,
@@ -41,10 +41,10 @@ class App extends Component {
         }
         else {
             // correct selection
-            const newProfiles = this.state.unselectedProfiles.filter(item => item.name !== name);
+            const newProfiles = this.state.unselectedProfiles.filter(item => item.profile !== profile);
             
             this.setState({ 
-                message: "You guessed correctly!",
+                message: "Correct Guess!",
                 curScore: this.state.curScore + 1,
                 profiles: profiles,
                 unselectedProfiles: newProfiles
@@ -66,7 +66,7 @@ class App extends Component {
                 {
                     this.state.profiles.map(profile => (
                         <Card
-                            name={profile.name}
+                            profile={profile.profile}
                             image={profile.image}
                             selectProfile={this.selectProfile} 
                             curScore={this.state.curScore}
