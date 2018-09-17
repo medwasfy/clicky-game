@@ -1,5 +1,6 @@
 .wrapper {
-    background: #ECEFF1;
+
+    background-image: url("/img/body_bg.jpg");
     height: 100%;
     display: flex;
     flex-flow: row wrap;
