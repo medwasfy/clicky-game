@@ -20,4 +20,4 @@ This app is a memory game with React.
 
 ## Screenshots
 
-![Alt text](https://github.com/medwasfy/mongo-scraper/blob/master/public/assets/images/Screen%20Shot%201.png)
+![Alt text](https://github.com/medwasfy/clicky-game/blob/master/public/img/Screen%20Shot%20.png)
